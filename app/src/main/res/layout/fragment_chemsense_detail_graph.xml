@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffffff"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".9"
+        android:background="#ffffffff"
+        android:layout_height="wrap_content">
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/graph"
+            android:layout_gravity="left|top" />
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/graph2"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:src="@drawable/email3"
+        android:id="@+id/email"
+        android:layout_gravity="right|bottom" />
+    </FrameLayout>
+
+</LinearLayout>

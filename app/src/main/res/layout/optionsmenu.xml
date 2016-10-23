@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/options"
+    android:background="@color/white">
+    <LinearLayout
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="0px" android:layout_height="0px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TableLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:showDividers="beginning|middle|end"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chemical Name:"
+                android:id="@+id/textView7"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_column="1"
+                android:nextFocusUp="@id/title" android:nextFocusLeft="@id/title"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm Threshold (mols/m³):"
+                android:id="@+id/textView3"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/alarmThreshold"
+                android:layout_column="1"
+                android:focusableInTouchMode="true"
+                android:focusable="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duty Cycle (%):"
+                android:id="@+id/textView2"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dutySpinner"
+                android:layout_column="1"
+                android:visibility="visible"
+                android:textSize="16sp"
+                android:background="#22222222" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulse Frequency (kHz):"
+            android:id="@+id/textView"
+            android:layout_column="0"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/freqSpinner"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:background="#22222222"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Molar Attenuation Coefficient (1/(m²*mol)):"
+                android:id="@+id/textView6"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attenuationCoefficient"
+                android:layout_column="1" />
+        </TableRow>
+
+    </TableLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:src="@drawable/board"
+        android:layout_weight="0.1"/>
+</LinearLayout>
